@@ -13,6 +13,9 @@ app.use(cors())
 app.use('/auth',userRouter)
 app.use('/posts',postsRouter)
 app.use('/posts',getSinglPosts)
+
+
+
  dbConnection()
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
